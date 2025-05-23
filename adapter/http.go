@@ -78,9 +78,62 @@ func CallGeminiAPI(input string) (string, error) {
 			{
 				Parts: []models.GeminiPart{
 					{
-						Text: fmt.Sprintf(`You are a smart assistant. Product info:
-						- SmartWatch X: Heart rate, Sleep tracker, GPS.
-						- SmartSpeaker Z: Voice control, Wi-Fi, Alarm.
+						Text: fmt.Sprintf(`You are an Apple product assistant. Here's the product information:
+
+						- iPhone 15 Pro:
+						- A17 Pro chip
+						- 6.1-inch Super Retina XDR display
+						- ProMotion technology with 120Hz refresh rate
+						- Triple camera system (48MP Main, Ultra Wide, Telephoto)
+						- USB-C port and Dynamic Island
+						- Titanium design, available in four finishes
+
+						- iPhone 15:
+						- A16 Bionic chip
+						- 6.1-inch Super Retina XDR display
+						- Dual-camera system (48MP Main, Ultra Wide)
+						- USB-C charging
+						- Ceramic Shield front, aluminum body
+
+						- MacBook Pro 14-inch (M3 Pro):
+						- Apple M3 Pro chip with 11-core CPU and 14-core GPU
+						- 14.2-inch Liquid Retina XDR display
+						- Up to 18 hours of battery life
+						- MagSafe 3, Thunderbolt 4 ports
+						- ProMotion, True Tone
+
+						- MacBook Air 13-inch (M2):
+						- Apple M2 chip
+						- 13.6-inch Liquid Retina display
+						- Fanless design
+						- MagSafe charging
+						- Up to 18 hours battery
+
+						- Apple Watch Series 9:
+						- S9 SiP chip with Double Tap gesture
+						- Always-On Retina display
+						- Blood Oxygen, ECG, Heart Rate monitoring
+						- Workout tracking, sleep tracking
+						- Water resistant to 50m
+
+						- Apple Watch Ultra 2:
+						- 49mm rugged titanium case
+						- Up to 36 hours of battery life (72 in Low Power Mode)
+						- Precision dual-frequency GPS
+						- Depth gauge and EN13319 certified for diving
+
+						- AirPods Pro (2nd Generation):
+						- H2 chip for better noise cancellation and sound
+						- Adaptive Transparency
+						- Spatial Audio with dynamic head tracking
+						- MagSafe charging case with Precision Finding
+
+						- iPad Pro 12.9-inch (M2):
+						- Apple M2 chip
+						- Liquid Retina XDR display
+						- Apple Pencil hover support
+						- 5G capable
+						- Face ID, USB-C with Thunderbolt
 
 						Customer asks: %s`, input),
 					},
